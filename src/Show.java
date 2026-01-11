@@ -37,7 +37,7 @@ public class Show {
 
     public void replaceActor(Actor newActor, String surname) {
         for (Actor actor : listOfActors) {
-            if (actor.surname == surname) {
+            if (actor.surname.equals(surname)) {
                 listOfActors.remove(actor);
                 listOfActors.add(newActor);
                 return;
